@@ -1,0 +1,331 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.top-banner-1 {
+    background: #041e3a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+    box-sizing: border-box;
+}
+
+.top-banner-1 p {
+    display: flex;
+    color: #ffffff;
+    justify-content: center !important;
+    line-height: 1.75em;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+.seletor-language {
+    display: flex;
+    align-items: center;
+}
+
+.tradutor {
+    color: #ffffff;
+    display: flex;
+}
+
+
+.top-banner-2 {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d1d1d1;
+    width: 100%;
+}
+
+.top-banner-2 h1 {
+    color: #041e3a;
+    font-family: 'Oranienbaum', serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    justify-content: center;
+    margin-left: 20px;
+    gap: 1px;
+}
+
+
+.top-banner-2 nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-banner-2-nav ul {
+    display: flex;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin-right: 20px;
+    font-size: 1rem;
+    line-height: 1.75em;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    color: #041e3a;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.search-form {
+    position: relative;
+    display: inline-block;
+}
+
+.search-form input {
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #ccc;
+}
+
+.search-form button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #041e3a;
+}
+
+main p {
+    display: flex;
+
+}
+
+.menu-icon-user {
+    color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -30px;
+}
+
+
+.secao h3 {
+    display: flex;
+    justify-content: center;
+    margin-right: 785px;
+    line-height: 2.444444em;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    padding-top: 10px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 306px;
+}
+
+.content-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 406px;
+    padding-top: 2.875rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 171px;
+    margin: 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    height: 273px;
+}
+
+
+.card img {
+    border-bottom: 1px solid #d1d1d1;
+    max-width: 222px;
+    height: 170px;
+    transition: transform 0.3s ease;  /* serve para deixar suave o zoom*/
+    mix-blend-mode: multiply; /*serve pra tirar o fundo da imagem */ 
+}
+
+
+img:hover { 
+    color: #d71920;
+    transform: scale(1.1); /* serve para dar um zoom/ a velocidade tambem*/
+}
+
+.legenda {
+   padding: 11px;
+    text-align: center;
+    overflow: hidden;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    color: #041e3a;
+    font-size: 13px;
+    font-style: normal;
+    height: 100vh;
+}
+
+.precos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 5px;
+    height: 100vh;
+}
+
+span.precoD {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+span.precoO {
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #333;
+}
+
+
+/* rodapé  */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+    clear: both;
+    letter-spacing: .3px;
+    padding: 0 0 1.885rem;
+    border-top: 1px solid #d1d1d1;
+    list-style: none;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+
+.footer-container .footer-1-container {
+    width: auto;
+    border-top: none;
+    flex-grow: 1;
+    padding: 0 0 0 1.875rem;
+    margin: 2.1875rem 0;
+    border-right: 1px solid #d1d1d1;
+}
+
+.footer-container .footer-2-container {
+    width: auto;
+    border-top: none;
+    flex-grow: 1;
+    padding: 0 0 0 1.875rem;
+    margin: 2.1875rem 0;
+    border-right: 1px solid #d1d1d1;
+}
+
+.footer-container .footer-3-container {
+    width: auto;
+    border-top: none;
+    padding: 0 0 0 1.875rem;
+    margin: 2.1875rem 0;
+}
+
+
+footer h3 {
+    color: #041e3a;
+    margin-left: 40px;
+    font-style: normal;
+    font-family: Text Medium, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+footer nav ul li {
+    font-size: 13px;
+    font-style: normal;
+    color: #000000;
+    list-style: none;
+    align-items: center;
+    margin-right: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: .75rem;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: .00156rem;
+    list-style: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 1px solid #d1d1d1;
+    padding-top: 1.5625rem;
+}
+
+
+.social-icons a {
+    color: #041e3a;
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 1.875rem;
+}
+
+.social-icons a:houver {
+    color: #d71920
+}
+
+.social-icons p {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.social-icons,
+.social-icons p {
+    text-align: center !important;
+    text-transform: uppercase;
+    font-size: .6875rem;
+    letter-spacing: 0;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    font-style: Normal;
+    font-weight: 400;
+}
+.copyright p {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #d1d1d1;
+
+}
+.copyright,
+.copyright p {
+    color: #4b5e96;
+    text-align: center !important;
+    text-transform: uppercase;
+    font-size: .6875rem;
+    letter-spacing: 0;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    font-style: Normal;
+    font-weight: 400;
+    padding-top: 1.875rem;
+    flex-basis: 100% !important;
+}

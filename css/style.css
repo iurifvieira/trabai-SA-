@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: -32px;
+    /* Joga o banner 1 (que tem 32px) para fora da tela ao rolar */
+    z-index: 9999;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.top-banner-1 {
+    background: #041e3a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+    box-sizing: border-box;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-banner-1 p {
+    display: flex;
+    color: #ffffff;
+    justify-content: center !important;
+    line-height: 1.75em;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    /* Começam invisíveis */
+    transform: translateY(10px);
+    /* Começam um pouco abaixo */
+    animation: trocarMensagem 8s infinite ease-in-out;
+}
+
+.top-banner-1 p:nth-child(2) {
+    animation-delay: 4s;
+}
+
+/* Animação que faz o efeito de fade (opacidade) e subida */
+@keyframes trocarMensagem {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    5% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Sobe e aparece */
+    }
+
+    45% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Fica parado na tela */
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-10px);
+        /* Sobe mais um pouco e desaparece */
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.top-banner-2 {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d1d1d1;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.top-banner-2 h1 {
+    color: #041e3a;
+    font-family: 'Oranienbaum', serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    justify-content: center;
+    margin-left: 20px;
+    gap: 1px;
+}
+
+.top-banner-2 h1 a {
+    color: #041e3a;
+    text-decoration: none;
+}
+
+.top-banner-2 nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-banner-2-nav ul {
+    display: flex;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin-right: 20px;
+    font-size: 1rem;
+    line-height: 1.75em;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    color: #041e3a;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.top-banner-2-nav ul a {
+    text-decoration: none;
+    color: #041e3a;
+    transition: border-color 0.3s;
+}
+
+.top-banner-2-nav a:hover {
+    text-decoration: underline;
+}
+
+.search-form {
+    position: relative;
+    display: inline-block;
+}
+
+.search-form input {
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #ccc;
+}
+
+.search-form button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #041e3a;
+}
+
+main p {
+    display: flex;
+
+}
+
+.menu-icon-user {
+    color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -30px;
+}
+
+.secao h3 {
+    display: flex;
+    justify-content: center;
+    margin-right: 785px;
+    line-height: 2.444444em;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    padding-top: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 306px;
+}
+
+.content-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* padding-top: 2.875rem; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 171px;
+    margin: 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    height: 273px;
+}
+
+.card img {
+    border-bottom: 1px solid #d1d1d1;
+    max-width: 222px;
+    height: 170px;
+    transition: transform 0.3s ease;
+    /* serve para deixar suave o zoom*/
+    mix-blend-mode: multiply;
+    /*serve pra tirar o fundo da imagem */
+
+}
+
+img:hover {
+    color: #d71920;
+    transform: scale(1.1);
+    /* serve para dar um zoom/ a velocidade tambem*/
+}
+
+.legenda {
+    padding: 11px;
+    text-align: center;
+    overflow: hidden;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    color: #041e3a;
+    font-size: 13px;
+    font-style: normal;
+    height: 100vh;
+    text-decoration: none;
+}
+
+.legenda a {
+    text-decoration: none;
+    color: #041e3a;
+}
+
+.precos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 5px;
+    height: 100vh;
+}
+
+span.precoD {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+span.precoO {
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #333;
+}
+
+/* rodapé  */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+    clear: both;
+    letter-spacing: .3px;
+    padding: 0 0 1.885rem;
+    border-top: 1px solid #d1d1d1;
+    list-style: none;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.footer-container .footer-1-container {
+    width: auto;
+    border-top: none;
+    flex-grow: 1;
+    padding: 0 0 0 1.875rem;
+    margin: 2.1875rem 0;
+    border-right: 1px solid #d1d1d1;
+}
+
+.footer-container .footer-2-container {
+    width: auto;
+    border-top: none;
+    flex-grow: 1;
+    padding: 0 0 0 1.875rem;
+    margin: 2.1875rem 0;
+    border-right: 1px solid #d1d1d1;
+}
+
+.footer-container .footer-3-container {
+    width: auto;
+    border-top: none;
+    padding: 0 0 0 1.875rem;
+    margin: 2.1875rem 0;
+}
+
+footer h3 {
+    color: #041e3a;
+    margin-left: 40px;
+    font-style: normal;
+    font-family: Text Medium, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+footer nav ul li {
+    font-size: 13px;
+    font-style: normal;
+    list-style: none;
+    align-items: center;
+    margin-right: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: .75rem;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: .00156rem;
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 2rem;
+}
+
+.social-icons a {
+    color: #041e3a;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.social-icons a[href*="facebook"]:hover {
+    color: #1877f2 !important;
+}
+
+.social-icons a[href*="instagram"]:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text !important;
+     background-clip: text !important;
+    -webkit-text-fill-color: transparent !important; 
+    color: transparent !important; 
+}
+
+
+.social-icons a::after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #041e3a;
+    font-family: 'Founders Grotesk text Regular', Helvetica, Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    white-space: nowrap;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Correção para o texto do data-title não sumir no hover do Instagram */
+.social-icons a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(2px);
+    -webkit-text-fill-color: #041e3a !important; /* Mantém o texto de baixo escuro */
+}
+
+.social-icons p {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons,
+.social-icons p {
+    text-align: center !important;
+    text-transform: uppercase;
+    font-size: .6875rem;
+    letter-spacing: 0;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    font-style: Normal;
+    font-weight: 400;
+}
+
+.copyright p {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #d1d1d1;
+
+}
+
+.copyright,
+.copyright p {
+    color: #4b5e96;
+    text-align: center !important;
+    text-transform: uppercase;
+    font-size: .6875rem;
+    letter-spacing: 0;
+    font-family: RL_DroidKufi, Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+    font-style: Normal;
+    font-weight: 400;
+    padding-top: 1.875rem;
+    flex-basis: 100% !important;
+}
+
+/* Layout da página de produto */
+.produto-detalhe-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+.produto-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.produto-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tag-promocao {
+    background-color: #d71920;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    align-self: flex-start;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.produto-titulo {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.produto-descricao {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.produto-precos {
+    margin-bottom: 25px;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.preco-atual {
+    color: #d71920;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.parcelamento {
+    font-size: 14px;
+    color: #28a745;
+    margin-top: 5px;
+}
+
+.seletor-tamanho {
+    margin-bottom: 30px;
+}
+
+.seletor-tamanho p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tamanhos-opcoes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-tamanho {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-tamanho:hover {
+    border-color: #000;
+    background-color: #f8f9fa;
+}
+
+.btn-comprar {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.btn-comprar:hover {
+    background-color: #333;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+    .produto-detalhe-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.formas-pagamento {
+    margin-top: 35px;
+    /* Controla o afastamento do botão de cima */
+    padding-top: 20px;
+    /* Cria um espaço interno antes do conteúdo */
+    border-top: 1px solid #eee;
+    /* Opcional: cria uma linha fina divisória */
+}
+
+.formas-pagamento h3 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+    /* Afasta o título dos ícones */
+    font-weight: 600;
+}
+
+.formas-pagamento img {
+    margin-right: 10px;
+    /* Afasta um ícone do outro */
+    vertical-align: middle;
+}

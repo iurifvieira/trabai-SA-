@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Comprar Blusa de Frio - Bella Moda</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-banner-1">
+            <p>Frete grátis acima de €120 </p>
+            <p>Promoção de inverno</p>
+        </div>
+        <div class="top-banner-2">
+            <h1><a href="index.html">Bella moda</a></h1>
+            <div class="top-banner-2-nav">
+                <nav>
+                    <ul>
+                        <li><a href="inicio.html">INICIO</a></li>
+                        <li><a href="index.html">PROMOÇÕES</a></li>
+                        <li>MASCULINO</li>
+                        <li>FEMININO</li>
+                        <li>INFANTIL</li>
+                    </ul>
+                </nav>
+            </div>
+            <section>
+                <div class="pesquisa">
+                    <form action="/buscar" method="get" class="search-form">
+                        <input type="search" name="q" placeholder="Pesquisar..." required>
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <div class="menu-user">
+                    <!-- O href agora aponta para o arquivo perfil.html -->
+                    <a href="perfil.html" class="menu-icon-user" title="Minha Conta">
+                        <svg xmlns="http://w3.org" width="16" height="16" fill="currentColor" class="bi bi-person"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <!-- Nova seção para a página de detalhes do produto único -->
+        <section class="produto-detalhe-container">
+
+            <!-- Lado Esquerdo: Imagem do produto -->
+            <div class="produto-imagem">
+                <img src="assets/blusa1.png" alt="Blusa de frio preta com touca de pelagem">
+            </div>
+
+            <!-- Lado Direito: Informações e botão de compra -->
+            <div class="produto-info">
+                <span class="tag-promocao">PROMOÇÃO DE INVERNO</span>
+                <h2 class="produto-titulo">Blusa de Frio (Touca com Pelagem)</h2>
+                <p class="produto-descricao">Conforto premium e isolamento térmico avançado. Esta blusa de frio conta
+                    com interior macio, capuz forrado com pelagem de alta densidade e acabamento reforçado para os dias
+                    mais frios.</p>
+
+                <div class="produto-precos">
+                    <span class="preco-antigo">R$ 2.340,90</span>
+                    <span class="preco-atual">R$ 980,90</span>
+                    <p class="parcelamento">Ou em até 10x de R$ 98,09 sem juros</p>
+                </div>
+
+                <!-- Seleção de Tamanho simples -->
+                <div class="seletor-tamanho">
+                    <p>Selecione o tamanho:</p>
+                    <div class="tamanhos-opcoes">
+                        <button type="button" class="btn-tamanho">P</button>
+                        <button type="button" class="btn-tamanho">M</button>
+                        <button type="button" class="btn-tamanho">G</button>
+                        <button type="button" class="btn-tamanho">GG</button>
+                    </div>
+                </div>
+
+                <!-- Botão de Ação -->
+                <div class="acao-compra">
+                    <button type="button" class="btn-comprar">
+                        <i class="bi bi-bag-fill"></i> ADICIONAR AO CARRINHO
+                    </button>
+                </div>
+                <div class="formas-pagamento">
+                    <h3>Formas de Pagamento Aceitas</h3>
+
+                    <!-- Ícone Visa (Desenhado por código) -->
+                    <svg width="45" height="30" viewBox="0 0 100 60"
+                        style="vertical-align: middle; margin-right: 10px;">
+                        <rect width="100" height="60" rx="5" fill="#1A1F71" />
+                        <text x="50" y="38" font-family="sans-serif" font-weight="bold" font-style="italic"
+                            font-size="24" fill="#FFF" text-anchor="middle">VISA</text>
+                    </svg>
+
+                    <!-- Ícone Mastercard (Desenhado por código) -->
+                    <svg width="45" height="30" viewBox="0 0 100 60"
+                        style="vertical-align: middle; margin-right: 10px;">
+                        <rect width="100" height="60" rx="5" fill="#222" />
+                        <circle cx="40" cy="30" r="20" fill="#EB001B" />
+                        <circle cx="60" cy="30" r="20" fill="#F79E1B" opacity="0.8" />
+                    </svg>
+
+                    <!-- Ícone PIX (Desenhado por código) -->
+                    <svg width="45" height="30" viewBox="0 0 100 60"
+                        style="vertical-align: middle; margin-right: 10px;">
+                        <rect width="100" height="60" rx="5" fill="#32BCAD" />
+                        <text x="50" y="38" font-family="sans-serif" font-weight="bold" font-size="22" fill="#FFF"
+                            text-anchor="middle">pix</text>
+                    </svg>
+
+                    <!-- Ícone Boleto / Código de Barras (Desenhado por código) -->
+                    <svg width="45" height="30" viewBox="0 0 100 60"
+                        style="vertical-align: middle; margin-right: 10px;">
+                        <rect width="100" height="60" rx="5" fill="#F4F4F4" stroke="#CCC" stroke-width="2" />
+                        <line x1="20" y1="15" x2="20" y2="45" stroke="#000" stroke-width="4" />
+                        <line x1="32" y1="15" x2="32" y2="45" stroke="#000" stroke-width="2" />
+                        <line x1="40" y1="15" x2="40" y2="45" stroke="#000" stroke-width="6" />
+                        <line x1="52" y1="15" x2="52" y2="45" stroke="#000" stroke-width="2" />
+                        <line x1="60" y1="15" x2="60" y2="45" stroke="#000" stroke-width="4" />
+                        <line x1="72" y1="15" x2="72" y2="45" stroke="#000" stroke-width="4" />
+                        <line x1="80" y1="15" x2="80" y2="45" stroke="#000" stroke-width="2" />
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1-container">
+                <section>
+                    <h3>SOBRE</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="sobrenos.html">Sobre nós</a></li>
+                            <li>Carreiras</li>
+                            <li>Privacidade</li>
+                            <li>Termos de uso</li>
+                            <li>Termos de venda</li>
+                            <li>Cookies</li>
+                            <li>Impressão</li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <div class="footer-2-container">
+                <section>
+                    <h3>CONTA</h3>
+                    <nav>
+                        <ul>
+                            <li>A minha conta</li>
+                            <li>Verificar o pedido</li>
+                            <li>Personalize sua experiência</li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <div class="footer-3-container">
+                <section>
+                    <h3>APOIO AO CLIENTE</h3>
+                    <nav>
+                        <ul>
+                            <li>Ajuda</li>
+                            <li>Envio</li>
+                            <li>Devoluções e trocas online gratuitas</li>
+                            <li>Diretrizes operacionais</li>
+                            <li>Serviços nas lojas</li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
